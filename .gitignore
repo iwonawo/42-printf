@@ -1,0 +1,23 @@
+# Object files
+libft/srcs/*.o
+srcs/*.o
+*.o
+
+# Libraries
+*.a
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+*.swp
+.DS_Store
+
+#libft unit tests
+libft/tests/
+printfTester/
+ft_printf_tester/
