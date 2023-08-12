@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 14:02:27 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/08/10 15:23:14 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/08/12 18:45:45 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,9 +29,9 @@ int	main()
 	char				*empty = "";
 
 	ft_printf("character: %c\nstring: %s\n", c, string);
-	ft_printf("number: %d\noctal: %i\n", number, octal_number);
+	ft_printf("number: %d\noctal: %i\nlong long min: %d\n", number, octal_number, llong_min);
 	ft_printf("hexadecimal X: %X\nhexadecimal x: %x\n", hex_value_X, hex_value_x);
-	ft_printf("unsigned int: %u\n", _i);
+	ft_printf("unsigned int: %u\n", unsigned_int);
 	ft_printf("unsigned long int: %u\n", ulint);
 	ft_printf("pointer: %p\n", pointer);
 	ft_printf("percentage sign: %%\n");
@@ -39,4 +39,5 @@ int	main()
 	ft_printf("int min: %d\nint max: %d\n", int_min, int_max);
 	ft_printf("null: %s\n", NULL);
 	ft_printf("empty: %s\n", empty);
+	ft_printf("example without second argument %s\n");
 }

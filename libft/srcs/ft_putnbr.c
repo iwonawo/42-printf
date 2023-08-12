@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 19:16:55 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/08/10 10:14:24 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/08/12 19:37:52 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,11 @@
 
 int	ft_putnbr(long long int n)
 {
-	const char	*base = "0123456789";
+	const char	*base;
 	int			nbr_len;
 
 	nbr_len = 0;
+	base = "0123456789";
 	if (n == LLONG_MIN)
 	{
 		write(1, "-9223372036854775807", 20);
