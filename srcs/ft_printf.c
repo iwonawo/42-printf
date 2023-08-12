@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 15:14:35 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/08/10 10:17:26 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/08/12 16:32:50 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@
 #include <limits.h>
 #include "ft_printf.h"
 
-static	int	ft_formatcheck(va_list args, const char format)
+static int	ft_formatcheck(va_list args, const char format)
 {
 	unsigned long long int	ptr;
 

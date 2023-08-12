@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/30 15:35:34 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/08/01 16:28:59 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/08/12 16:20:34 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,6 @@
 # include <limits.h>
 # include "../libft/includes/libft.h"
 
-int		ft_printf(const char *format, ...);
+int	ft_printf(const char *format, ...);
 
 #endif
