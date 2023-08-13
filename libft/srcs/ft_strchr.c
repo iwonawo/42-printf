@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/13 19:17:14 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/08/01 16:28:36 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/08/13 19:07:23 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strchr(const char *str, int c)
 	size_t	i;
 
 	i = 0;
-	while (str[i] != '\0')
+	while (str[i])
 	{
 		if (str[i] == (char)c)
 			return ((char *)&str[i]);

@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 14:02:27 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/08/13 10:07:37 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/08/13 19:21:48 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,12 @@ int	main()
 	ft_printf("null: %s\n", NULL);
 	ft_printf("empty: %s\n", empty);
 	ft_printf("example without second argument %s\n");
+	ft_printf("null pointer: %p\n", (void *)0);
 	printed_len = ft_printf("To count total printed length of %c and %s.\n", c, string);
 	ft_printf("Total printed length: %d\n", printed_len);
+
+	int len = ft_putnbr(-123);
+	ft_printf("\nft_putnbr len: %d\n", len);
+
+	printf("long long min: %lld\n", llong_min);
 }
