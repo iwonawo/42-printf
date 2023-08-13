@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.ae>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 14:02:27 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/08/12 18:45:45 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/08/13 10:07:37 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,10 @@ int	main()
 	int					int_max = 2147483647;
 	unsigned long int	ulint = 4294967295;
 	char				*empty = "";
+	int					printed_len;
 
 	ft_printf("character: %c\nstring: %s\n", c, string);
-	ft_printf("number: %d\noctal: %i\nlong long min: %d\n", number, octal_number, llong_min);
+	ft_printf("number: %d\noctal: %i\nhex value: %i\nlong long min: %d\n", number, octal_number, hex_value_x, llong_min);
 	ft_printf("hexadecimal X: %X\nhexadecimal x: %x\n", hex_value_X, hex_value_x);
 	ft_printf("unsigned int: %u\n", unsigned_int);
 	ft_printf("unsigned long int: %u\n", ulint);
@@ -40,4 +41,6 @@ int	main()
 	ft_printf("null: %s\n", NULL);
 	ft_printf("empty: %s\n", empty);
 	ft_printf("example without second argument %s\n");
+	printed_len = ft_printf("To count total printed length of %c and %s.\n", c, string);
+	ft_printf("Total printed length: %d\n", printed_len);
 }
