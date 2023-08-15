@@ -6,7 +6,7 @@
 /*   By: iwozniak <iwozniak@student.42abudhabi.a    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/10 14:02:27 by iwozniak          #+#    #+#             */
-/*   Updated: 2023/08/15 12:51:49 by iwozniak         ###   ########.fr       */
+/*   Updated: 2023/08/15 14:59:20 by iwozniak         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,37 +30,48 @@ int	main()
 	int					printed_len;
 
 	ft_printf("hex: %x\n", 123);
-	printf("hex: %x\nn", 123);
+	printf("hex: %x\n\n", 123);
 
 	ft_printf("character: %c\nstring: %s\n", c, string);
-	printf("character: %c\nstring: %s\n", c, string);
+	printf("character: %c\nstring: %s\n\n", c, string);
 
 	ft_printf("number: %d\noctal: %i\nhex value: %i\nlong long min: %d\n", number, octal_number, hex_value_x, llong_min);
+	printf("number: %d\noctal: %i\nhex value: %i\nlong long min: %lld\n\n", number, octal_number, hex_value_x, llong_min);
+
 	ft_printf("hexadecimal X: %X\nhexadecimal x: %x\n", hex_value_X, hex_value_x);
+	printf("hexadecimal X: %X\nhexadecimal x: %x\n\n", hex_value_X, hex_value_x);
+
 	ft_printf("unsigned int: %u\n", unsigned_int);
+	printf("unsigned int: %u\n\n", unsigned_int);
+
 	ft_printf("unsigned long int: %u\n", ulint);
-	ft_printf("pointer: %p\n", pointer);
+	printf("unsigned long int: %lu\n\n", ulint);
+
 	ft_printf("percentage sign: %%\n");
+	printf("percentage sign: %%\n\n");
+
 	ft_printf("long long min: %d\n", llong_min);
+	printf("long long min: %lld\n\n", llong_min);
+
 	ft_printf("int min: %d\nint max: %d\n", int_min, int_max);
+	printf("int min: %d\nint max: %d\n\n", int_min, int_max);
+
 	ft_printf("null: %s\n", NULL);
+	printf("null: %s\n", NULL);
 	ft_printf("empty: %s\n", empty);
+	printf("empty: %s\n\n", empty);
 
-	ft_printf("example without second argument\n");
-
+	ft_printf("pointer: %p\n", pointer);
+	printf("pointer: %p\n", pointer);
 	ft_printf("null pointer: %p\n", (void *)0);
 	ft_printf("null pointer: %p\n", NULL);
-	printf("null pointer: %p\n", NULL);
-
-
+	printf("null pointer: %p\n\n", NULL);
 
 	printed_len = ft_printf("To count total printed length of %c and %s.\n", c, string);
 	ft_printf("Total printed length: %d\n", printed_len);
+	printf("Total printed length: %d\n\n", printed_len);
 
 	int len = ft_putnbr(-123);
 	ft_printf("\nft_putnbr len: %d\n", len);
-
-	printf("long long min: %lld\n", llong_min);
-	ft_printf("\001\002\007\v\010\f\r\n");
-	printf("\001\002\007\v\010\f\r\n");
+	printf("ft_putnbr len: %d\n", len);
 }
