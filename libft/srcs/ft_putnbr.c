@@ -21,7 +21,7 @@ int	ft_putnbr(long long int n)
 	base = "0123456789";
 	if (n == LLONG_MIN)
 	{
-		write(1, "-9223372036854775807", 20);
+		write(1, "-9223372036854775808", 20);
 		return (20);
 	}
 	if (n < 0)
